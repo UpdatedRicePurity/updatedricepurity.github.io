@@ -13,7 +13,8 @@
 		<p id="demo"></p>
 
 <!-- <form action="/action_page.php"> -->
-  <input type="checkbox" id="checkBox1" onclick="myFunction()"> I have a bike<br>
+		<p>1. </p>
+  <input type="checkbox" id="checkBox1" onclick="myFunction()"> Held hands romantically?<br>
   <input type="checkbox" id="checkBox2" onclick="myFunction()"> I have a car<br>
   <input type="checkbox" id="checkBox3" onclick="myFunction()"> I have a boat<br>
 <input type ="checkbox" id="checkBox4" onclick="myFunction()"> I have a<br>
@@ -141,18 +142,18 @@ function myFunction() {
 	var checkBox99 = document.getElementById("checkBox99");
 	var checkBox100 = document.getElementById("checkBox100");
   if (checkBox1.checked == true){
-	 document.getElementById("demo").innerHTML =
-"The total is: "; 
 	  x ++;
   }
-	 else if(checkBox2.checked == true){
-		document.getElementById("demo").innerHTML = "OOF";
-		 x++;
-	}
+else if(checkBox2.checked == true){
+	x++;
+}
 else if(checkBox3.checked == true)
 {
 	x++;
 }
+	else if(checkBox4.checked == true)
+	{
+x++;
 }
 	
 	function buttonClick()
