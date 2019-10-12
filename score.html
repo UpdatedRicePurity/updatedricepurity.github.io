@@ -13,15 +13,18 @@
 		<p id="demo"></p>
 		
 		<script>
+			var favoriteMovie = sessionStorage.getItem('favoriteMovie');
+			document.getElementById("demo").innerHTML = favoriteMovie;
+			
  
-	var queryString = decodeURIComponent(window.location.search);
-	queryString = queryString.substring(1);
-	var queries = queryString.split("&");
-	for (var i = 0; i < queries.length; i++)
-	{
-  		//document.write(queries[i] + "<br>");
-		document.getElementById("demo").innerHTML = document.write(queries[i] + "<br>");
-	}
+// 	var queryString = decodeURIComponent(window.location.search);
+// 	queryString = queryString.substring(1);
+// 	var queries = queryString.split("&");
+// 	for (var i = 0; i < queries.length; i++)
+// 	{
+//   		//document.write(queries[i] + "<br>");
+// 		document.getElementById("demo").innerHTML = document.write(queries[i] + "<br>");
+// 	}
 			
  
 </script>
