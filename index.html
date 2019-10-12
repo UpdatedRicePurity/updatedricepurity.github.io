@@ -16,14 +16,15 @@
   <input type="checkbox" id="checkBox1" onclick="myFunction()"> I have a bike<br>
   <input type="checkbox" id="checkBox2" onclick="myFunction()"> I have a car<br>
   <input type="checkbox" id="checkBox3" onclick="myFunction()"> I have a boat<br>
-<input type ="checkbox" id="checkBox4" onclick="myFunction()"> I have a a<br>
+<input type ="checkbox" id="checkBox4" onclick="myFunction()"> I have a<br>
 	<br>
   <input type="submit" value="Submit">
 <!-- 		</form> -->
 		
 		<script>
+			var x = 0;
 function myFunction() {
-	var x = 0;
+	
   var checkBox1 = document.getElementById("checkBox1");
 	var checkBox2 = document.getElementById("checkBox2");
 	var checkBox3 = document.getElementById("checkBox3");
@@ -127,11 +128,11 @@ function myFunction() {
   if (checkBox1.checked == true){
 	 document.getElementById("demo").innerHTML =
 "The total is: "; 
-	  x ++;
+	  x = 1;
   }
 	 if(checkBox2.checked == true){
 		document.getElementById("demo").innerHTML = "OOF";
-		 x++;
+		 x =2;
 	}
  if(checkBox3.checked == true)
 {
