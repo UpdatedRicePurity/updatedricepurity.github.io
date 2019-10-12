@@ -9,15 +9,30 @@
 	<body bgcolor="#E6E6FA">
 		
 		<h1 align="center">Y'all already know how this works</h1>
+		
+		<p id="demo"></p>
 
 <form action="/action_page.php">
-  <input type="checkbox" name="q1" value="1"> I have a bike<br>
-  <input type="checkbox" name="q2" value="2"> I have a car<br>
-  <input type="checkbox" name="q3" value="3"> I have a boat<br>
-<input type ="checkbox" name="q4" value="4"> I have a a<br>
+  <input type="checkbox" id="myCheck" onclick="myFunction()"> I have a bike<br>
+  <input type="checkbox" id="myCheck" onclick="myFunction()"> I have a car<br>
+  <input type="checkbox" id="myCheck" onclick="myFunction()"> I have a boat<br>
+<input type ="checkbox" id="myCheck" onclick="myFunction()"> I have a a a<br>
 	<br>
   <input type="submit" value="Submit">
 		</form>
+		
+		<script>
+function myFunction() {
+	static var x = 0;
+  var checkBox = document.getElementById("myCheck");
+  if (checkBox.checked == true){
+    x = x + 1;
+	  
+  }
+	document.getElementById("demo").innerHTML =
+"The total is: " + x;
+}
+</script>
 <!-- 		<nav>
     		<ul>
         		<li><a href="/">Home</a></li>
