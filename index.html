@@ -19,7 +19,7 @@
 <input type ="checkbox" id="checkBox4" onclick="myFunction()"> I have a<br>
 	<br>
 		<form action="score.html">
-    <input type="submit" value="Go to Google" />
+    <input type="submit" value="Go to Score" onclick="buttonClick()"/>
 </form>
 <!--   <button name="button" onClick="buttonClick()">Submit</button> -->
 <!-- 		</form> -->
@@ -145,7 +145,8 @@ else if(checkBox3.checked == true)
 	
 	function buttonClick()
 	{
-		document.getElementById("demo").innerHTML = "damn: "  + x;
+		var queryString = "?para1=" + x;
+		window.location.href = "score.html" + queryString;
 	}
 </script>
 	</body>
