@@ -18,7 +18,7 @@
   <input type="checkbox" id="checkBox3" onclick="myFunction()"> I have a boat<br>
 <input type ="checkbox" id="checkBox4" onclick="myFunction()"> I have a<br>
 	<br>
-  <input type="submit" value="Submit">
+  <button name="button" onClick="buttonClick()">Click me</button>
 <!-- 		</form> -->
 		
 		<script>
@@ -136,9 +136,14 @@ function myFunction() {
 	}
  if(checkBox3.checked == true)
 {
-	document.getElementById("demo").innerHTML = "damn: "  + x;
+	x++;
 }
 }
+	
+	function buttonClick()
+	{
+		document.getElementById("demo").innerHTML = "damn: "  + x;
+	}
 </script>
 	</body>
 </html>
