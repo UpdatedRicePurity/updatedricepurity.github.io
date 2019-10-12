@@ -18,9 +18,20 @@
   <input type="checkbox" id="checkBox3" onclick="myFunction()"> I have a boat<br>
 <input type ="checkbox" id="checkBox4" onclick="myFunction()"> I have a<br>
 	<br>
-		<form action="score.html">
+		
+		<button id="myButton" class="float-left submit-button" >Home</button>
+
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+	    var queryString = "?para1=" + x;
+		window.location.href = "score.html" + queryString;
+        location.href = "score.html";
+    };
+</script>
+											   
+<!-- 		<form action="score.html">
     <input type="submit" value="Get Score" onclick="buttonClick()"/>
-</form>
+</form> -->
 <!--   <button name="button" onClick="buttonClick()">Submit</button> -->
 <!-- 		</form> -->
 		
@@ -145,8 +156,7 @@ else if(checkBox3.checked == true)
 	
 	function buttonClick()
 	{
-		var queryString = "?para1=" + x;
-		window.location.href = "score.html" + queryString;
+		
 	}
 </script>
 	</body>
